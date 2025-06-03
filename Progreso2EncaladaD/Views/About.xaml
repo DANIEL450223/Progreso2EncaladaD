@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Progreso2EncaladaD.Views.About"
+             Title="About">
+    <Grid Padding="20"
+          RowDefinitions="Auto,Auto"
+          ColumnDefinitions="*,*"
+          RowSpacing="15"
+          ColumnSpacing="15">
+        
+            <Frame Grid.Row="0" Grid.Column="0" CornerRadius="5" Padding="10">
+                <StackLayout>
+                    <Label Text="Nombre:" FontAttributes="Bold"/>
+                    <Label Text="Daniel Encalada"/>
+                </StackLayout>
+            </Frame>
+        
+            <Frame Grid.Row="0" Grid.Column="1" CornerRadius="5" Padding="10">
+                <StackLayout>
+                    <Label Text="Fecha de Nacimiento:" FontAttributes="Bold"/>
+                    <Label Text="23/11/2004"/>
+                </StackLayout>
+            </Frame>
+        
+            <Frame Grid.Row="1" Grid.Column="0" CornerRadius="5" Padding="10">
+                <StackLayout>
+                    <Label Text="Intereses:" FontAttributes="Bold"/>
+                    <Label Text="Videojuegos, Deportes"/>
+                </StackLayout>
+            </Frame>
+        
+            <Frame Grid.Row="1" Grid.Column="1" CornerRadius="5" Padding="10">
+                <StackLayout>
+                    <Label Text="Versión:" FontAttributes="Bold"/>
+                    <Label Text="34.0.6"/>
+                </StackLayout>
+            </Frame>
+
+    </Grid>
+</ContentPage>

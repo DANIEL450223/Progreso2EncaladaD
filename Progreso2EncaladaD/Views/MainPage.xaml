@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Progreso2EncaladaD.MainPage">
+
+    <StackLayout Padding="20"
+              Spacing="25"
+              VerticalOptions="CenterAndExpand"
+              HorizontalOptions="CenterAndExpand">
+
+        <Label Text="APP DANIEL ENCALADA"
+            FontAttributes="Bold"
+            FontSize="Large"
+            HorizontalOptions="Center" />
+
+        <Image Source="hogwarts.jpg"
+            WidthRequest="150"
+            HeightRequest="150"
+            HorizontalOptions="Center" />
+        <Button x:Name="IrAChiste"
+             Text="Ir a Chiste"
+             WidthRequest="200"
+             HorizontalOptions="Center"
+             Clicked="IrAChistes_Clicked" />
+        <Button x:Name="IrAAbout"
+             Text="Ir a About"
+             WidthRequest="200"
+             HorizontalOptions="Center"
+             Clicked="IrAAbout_Clicked" />
+    </StackLayout>
+</ContentPage>
