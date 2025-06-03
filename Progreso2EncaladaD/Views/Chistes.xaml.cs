@@ -17,9 +17,9 @@ public partial class Chistes : ContentPage
 	{
 		try
 		{
-			var chiste = await _chistesRepository.GetChisteAsync();
-			ChisteLabel.Text = chiste;
-		}
+            var chiste = await _chistesRepository.GetChisteAsync();
+            ChisteLabel.Text = chiste;
+        }
 		catch (Exception ex)
 		{
 			ChisteLabel.Text = $"Error en la carga del chiste: {ex.Message}";

@@ -3,13 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Progreso2EncaladaD.Views.Chistes"
              Title="Chistes">
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+    <AbsoluteLayout>
         <Label x:Name="ChisteLabel"
-           Text="Texto inicial"
-           FontSize="20"
-           HorizontalTextAlignment="Center"
-           VerticalTextAlignment="Center" />
+            Text="Texto inicial"
+            FontSize="20"
+            AbsoluteLayout.LayoutBounds="0.53,0.5,450,110"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+     />
         <Button Text="Otro chiste"
-            Clicked="OnOtroChisteClicked" />
-    </StackLayout>
+            AbsoluteLayout.LayoutBounds="0.5,0.9,100,50"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            Clicked="OtroChisteClicked" />
+    </AbsoluteLayout>
 </ContentPage>

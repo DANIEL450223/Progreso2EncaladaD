@@ -8,23 +8,14 @@ using Newtonsoft.Json.Linq;
 
 namespace Progreso2EncaladaD.Repository
 {
-    internal class ChistesRepository
+    public class ChistesRepository
     {
-        internal async Task<string> GetChisteAsync()
+        private readonly HttpClient _httpClient;
+        public ChistesRepository()
         {
-            throw new NotImplementedException();
+            _httpClient = new HttpClient();
         }
-
-        public class ChisteRepository
-        {
-            private readonly HttpClient _httpClient;
-
-            public ChisteRepository()
-            {
-                _httpClient = new HttpClient();
-            }
-
-            public async Task<string> GetChisteAsync()
+            internal async Task<string> GetChisteAsync()
             {
                 var response = await _httpClient.GetStringAsync("https://official-joke-api.appspot.com/random_joke");
                 var json = JObject.Parse(response);
@@ -32,7 +23,7 @@ namespace Progreso2EncaladaD.Repository
                 string punchline = json["punchline"]?.ToString();
                 return $"{setup}\n\n{punchline}";
             }
-        }
+        
     }
 
 }
