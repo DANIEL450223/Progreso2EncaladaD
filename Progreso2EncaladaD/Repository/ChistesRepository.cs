@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
@@ -9,6 +10,11 @@ namespace Progreso2EncaladaD.Repository
 {
     internal class ChistesRepository
     {
+        internal async Task<string> GetChisteAsync()
+        {
+            throw new NotImplementedException();
+        }
+
         public class ChisteRepository
         {
             private readonly HttpClient _httpClient;

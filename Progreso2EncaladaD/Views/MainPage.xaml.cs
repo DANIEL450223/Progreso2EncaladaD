@@ -1,4 +1,6 @@
-﻿namespace Progreso2EncaladaD
+﻿using Progreso2EncaladaD.Views;
+
+namespace Progreso2EncaladaD
 {
     public partial class MainPage : ContentPage
     {
@@ -20,5 +22,6 @@
             Navigation.PushAsync(new About());
 
         }
-
     }
+
+}
